@@ -7,7 +7,7 @@
 <meta name="description" content="Builder Buddy is your 24/7 personal assistant for construction finances.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/tabler-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,7 +46,7 @@
       <p style="font-size:16px;color:#6B7280">No credit card. No setup fees. Just leave your details and we&rsquo;ll onboard you personally.</p>
     </div>
     <div style="background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:40px;box-shadow:0 4px 24px rgba(0,0,0,.06);">
-      <form action="https://formspree.io/f/xnjrjwya" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+      <form id="signup-form" action="https://formspree.io/f/xnjrjwya" method="POST" style="display:flex;flex-direction:column;gap:16px;">
         <input type="hidden" name="_subject" value="New Builder Buddy Sign Up">
         <div>
           <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:6px">First name</label>
@@ -106,6 +106,35 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var form = document.getElementById('signup-form');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(res) {
+      if (res.ok) {
+        form.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="width:56px;height:56px;background:#e8f7f2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px"><i class="ti ti-circle-check" style="font-size:32px;color:#1D9E75"></i></div><h3 style="margin-bottom:8px">Submitted!</h3><p style="color:#6B7280;margin-bottom:8px">We\'ll be in touch shortly.</p><p style="font-size:13px;color:#9CA3AF">Returning home in 5 seconds…</p></div>';
+        setTimeout(function(){ window.location.href = 'index.html'; }, 5000);
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Start my free month →';
+      }
+    }).catch(function() {
+      btn.disabled = false;
+      btn.textContent = 'Start my free month →';
+    });
+  });
+})();
+</script>
 
 <script>
 (function(){
