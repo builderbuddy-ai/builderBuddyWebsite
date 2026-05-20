@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — Builder Buddy</title>
+<meta name="description" content="Builder Buddy is your 24/7 personal assistant for construction finances. Track expenses, manage budgets, and send pay requests — all from WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/tabler-icons.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <img src="data:image/jpeg;base64,data:image/jpeg;base64,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" alt="Builder Buddy logo">
+        Builder Buddy
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="features.html" id="nav-features">Features</a></li>
+        <li><a href="pricing.html" id="nav-pricing">Pricing</a></li>
+        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+        <li><a href="signup.html" class="nav-cta">Sign up free</a></li>
+      </ul>
+      <button class="nav-burger" onclick="toggleMobile()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="index.html" id="mnav-home">Home</a>
+      <a href="features.html" id="mnav-features">Features</a>
+      <a href="pricing.html" id="mnav-pricing">Pricing</a>
+      <a href="contact.html" id="mnav-contact">Contact</a>
+      <a href="signup.html" style="color:#1D9E75;font-weight:700">Sign up free</a>
+    </div>
+  </nav>
+
+
+<!-- HERO -->
+<section style="padding: 100px 0 80px; background: linear-gradient(160deg, #f0fdf6 0%, #fff 60%);">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+    <div>
+      <span class="eyebrow">For general contractors</span>
+      <h1 style="margin-bottom:20px">Meet Builder Buddy.</h1>
+      <p class="lead" style="margin-bottom:36px">Your 24/7 back-office assistant for construction. Record transactions, track expenses, and generate reports on demand — all from WhatsApp. Text, voice, or images. We've got you covered.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="signup.html" class="btn btn-primary btn-lg">Start free &rarr;</a>
+        <a href="features.html" class="btn btn-outline btn-lg">See features</a>
+      </div>
+      <p style="margin-top:18px;font-size:13px;color:#9CA3AF;">First month free &bull; No credit card required &bull; Works on WhatsApp</p>
+    </div>
+    <div style="position:relative;">
+      <div style="background:#ECE5DD;border-radius:20px;padding:16px;box-shadow:0 20px 60px rgba(0,0,0,.12);">
+        <div style="background:#1D9E75;border-radius:12px 12px 0 0;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+          <img src="data:image/jpeg;base64,data:image/jpeg;base64,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" style="width:38px;height:38px;border-radius:50%;object-fit:cover;" alt="BB">
+          <div><div style="font-size:14px;font-weight:700;color:#fff">Builder Buddy</div><div style="font-size:11px;color:#9FE1CB">online</div></div>
+        </div>
+        <div style="padding:16px 12px;display:flex;flex-direction:column;gap:10px;">
+          <div style="background:#DCF8C6;border-radius:10px 0 10px 10px;align-self:flex-end;padding:9px 12px;font-size:13px;max-width:82%">Lumber for glencoe job</div>
+          <div style="background:#fff;border-radius:0 10px 10px 10px;align-self:flex-start;padding:9px 12px;font-size:13px;max-width:82%">Here's what I'll log:<br>&bull; Amount: $342.17 &mdash; Expense<br>&bull; Vendor: Home Depot<br>&bull; Category: Rough Structure<br>&bull; Date: today<br>Reply <strong>card</strong> to confirm.</div>
+          <div style="background:#DCF8C6;border-radius:10px 0 10px 10px;align-self:flex-end;padding:9px 12px;font-size:13px;max-width:82%">card</div>
+          <div style="background:#fff;border-radius:0 10px 10px 10px;align-self:flex-start;padding:9px 12px;font-size:13px;max-width:82%">&#9989; Transaction logged<br>&bull; $342.17 &mdash; Home Depot<br>&bull; Rough Structure &middot; Glencoe<br>&bull; Credit Card &middot; Today</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@media(max-width:720px){section > .container{grid-template-columns:1fr !important}}
+
+<!-- LOGOS / TRUST BAR -->
+<section class="tight" style="background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;">
+  <div class="container" style="text-align:center;">
+    <p style="font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#9CA3AF;margin-bottom:20px">Built for the way contractors actually work</p>
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:40px;font-size:14px;font-weight:500;color:#6B7280;">
+      <span><i class="ti ti-brand-whatsapp" style="color:#25D366;font-size:18px;vertical-align:-3px;margin-right:6px"></i>WhatsApp native</span>
+      <span><i class="ti ti-microphone" style="color:#1D9E75;font-size:18px;vertical-align:-3px;margin-right:6px"></i>Voice notes</span>
+      <span><i class="ti ti-camera" style="color:#1D9E75;font-size:18px;vertical-align:-3px;margin-right:6px"></i>Receipt scanning</span>
+      <span><i class="ti ti-table" style="color:#1D9E75;font-size:18px;vertical-align:-3px;margin-right:6px"></i>Google Sheets</span>
+      <span><i class="ti ti-file-type-pdf" style="color:#1D9E75;font-size:18px;vertical-align:-3px;margin-right:6px"></i>PDF reports</span>
+      <span><i class="ti ti-shield-check" style="color:#1D9E75;font-size:18px;vertical-align:-3px;margin-right:6px"></i>Secure &amp; private</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / POSITIONING -->
+<section>
+  <div class="container" style="max-width:720px;text-align:center;">
+    <span class="eyebrow">Why Builder Buddy</span>
+    <h2 style="margin-bottom:20px">Your back office shouldn't run you.</h2>
+    <p class="lead">See how contractors manage every job from WhatsApp &mdash; no Excel, no apps, no paperwork. Just text and Builder Buddy handles the rest.</p>
+  </div>
+</section>
+
+<!-- FEATURE HIGHLIGHTS (3-up) -->
+<section class="tight" style="background:#F9FAFB;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1px solid #E5E7EB;">
+        <div style="width:44px;height:44px;background:#e8f7f2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i class="ti ti-receipt" style="font-size:22px;color:#1D9E75"></i></div>
+        <h4 style="margin-bottom:8px">Log expenses instantly</h4>
+        <p style="font-size:14px;color:#6B7280;line-height:1.65">Snap a receipt and Buddy reads the vendor, amount, and date automatically.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1px solid #E5E7EB;">
+        <div style="width:44px;height:44px;background:#e8f7f2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i class="ti ti-file-invoice" style="font-size:22px;color:#1D9E75"></i></div>
+        <h4 style="margin-bottom:8px">Professional pay requests</h4>
+        <p style="font-size:14px;color:#6B7280;line-height:1.65">Generate a branded PDF pay request and send it to your GC in one message.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1px solid #E5E7EB;">
+        <div style="width:44px;height:44px;background:#e8f7f2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i class="ti ti-chart-bar" style="font-size:22px;color:#1D9E75"></i></div>
+        <h4 style="margin-bottom:8px">Know your margins</h4>
+        <p style="font-size:14px;color:#6B7280;line-height:1.65">Ask Buddy any question about your jobs and get an instant, accurate answer.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1px solid #E5E7EB;">
+        <div style="width:44px;height:44px;background:#e8f7f2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i class="ti ti-clock-hour-4" style="font-size:22px;color:#1D9E75"></i></div>
+        <h4 style="margin-bottom:8px">Track worker hours</h4>
+        <p style="font-size:14px;color:#6B7280;line-height:1.65">Log hours and Buddy calculates pay, tracks what you owe, and keeps it all organized.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1px solid #E5E7EB;">
+        <div style="width:44px;height:44px;background:#e8f7f2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i class="ti ti-writing" style="font-size:22px;color:#1D9E75"></i></div>
+        <h4 style="margin-bottom:8px">Win jobs with proposals</h4>
+        <p style="font-size:14px;color:#6B7280;line-height:1.65">Create branded proposals in seconds and convert them to projects when approved.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1px solid #E5E7EB;">
+        <div style="width:44px;height:44px;background:#e8f7f2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i class="ti ti-microphone" style="font-size:22px;color:#1D9E75"></i></div>
+        <h4 style="margin-bottom:8px">Works with voice</h4>
+        <p style="font-size:14px;color:#6B7280;line-height:1.65">Hands dirty? On the road? Send a voice note and Buddy handles everything.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="features.html" class="btn btn-outline">See all features &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section style="background:#1D9E75;padding:72px 0;">
+  <div class="container" style="text-align:center;">
+    <h2 style="color:#fff;margin-bottom:16px">Ready to get your time back?</h2>
+    <p style="font-size:18px;color:#9FE1CB;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto">First month completely free. Hands-on onboarding. Cancel anytime.</p>
+    <a href="signup.html" class="btn btn-lg" style="background:#fff;color:#1D9E75;">Start free today &rarr;</a>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <img src="data:image/jpeg;base64,data:image/jpeg;base64,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" alt="Builder Buddy">
+            <span>Builder Buddy</span>
+          </div>
+          <p class="footer-desc">Your 24/7 personal assistant for construction finances. Track expenses, manage budgets, and send pay requests — all from WhatsApp.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="signup.html">Sign up free</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="mailto:johnny@builderbuddy-ai.com">johnny@builderbuddy-ai.com</a>
+          <a href="tel:+16175830933">(617) 583-0933</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Builder Buddy AI &mdash; Part of Iguest Management Corp. Venice, CA.</span>
+        <a href="privacy.html" style="color:inherit">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+function toggleMobile() {
+  document.getElementById('nav-mobile').classList.toggle('open');
+}
+// highlight active nav link
+(function() {
+  var p = location.pathname.split('/').pop() || 'index.html';
+  var map = { 'index.html':'nav-home','features.html':'nav-features','pricing.html':'nav-pricing','contact.html':'nav-contact' };
+  var mmap = { 'index.html':'mnav-home','features.html':'mnav-features','pricing.html':'mnav-pricing','contact.html':'mnav-contact' };
+  if (map[p]) { var el=document.getElementById(map[p]); if(el) el.classList.add('active'); }
+  if (mmap[p]) { var el2=document.getElementById(mmap[p]); if(el2) el2.classList.add('active'); }
+})();
+</script>
+
+
+</body>
+</html>
