@@ -234,6 +234,15 @@ footer {
   .bb-grid { grid-template-columns: 1fr; gap: 32px; }
   .bb-copy { order: 2; } .bb-ph { order: 1; }
   section > .container { grid-template-columns: 1fr !important; }
+  .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .trust-bar-items {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 24px;
+    max-width: 320px;
+    margin: 0 auto;
+    justify-content: unset;
+  }
 }
 .bb-copy h3 { font-size: 24px; font-weight: 800; margin-bottom: 12px; }
 .bb-copy p { font-size: 15px; color: var(--gray-500); line-height: 1.75; margin-bottom: 24px; }
