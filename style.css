@@ -238,10 +238,9 @@ footer {
   .trust-bar-items {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    gap: 14px 24px;
+    gap: 14px 24px !important;
     max-width: 320px;
     margin: 0 auto;
-    justify-content: unset;
   }
 }
 .bb-copy h3 { font-size: 24px; font-weight: 800; margin-bottom: 12px; }
